@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Box, Button, PageContent, PageWithHeader, Stack, TopNav } from 'bumbag';
+import { Box, Button, PageContent, PageWithHeader, Stack, Text, TopNav } from 'bumbag';
 import WordPair from './WordPair';
 
 import adjectives from "./wordlists/adjectives.json";
@@ -43,6 +43,12 @@ function App() {
           {pairs.map((pair: string, idx: number) => <WordPair key={idx} wordPair={pair} />)}
         </Stack>
       </PageContent>
+      <PageContent>
+        <Box textAlign="center">
+          <Text fontSize="150" fontWeight="500">Copyright &copy; { new Date().getFullYear() } Ben Vidulich</Text>
+        </Box>
+      </PageContent>
+
     </Box>
     </PageWithHeader>
   );
