@@ -11,10 +11,10 @@ function copyToClipboard(text: string) {
 
 function WordPair(props: Props) {
   return (
-    <Card variant="shadowed" width="100%">
+    <Card variant="shadowed">
       <Level>
-        <Text fontSize="500">{props.wordPair }</Text>
-        <Button size="small" variant="ghost" onClick={() => copyToClipboard(props.wordPair)}>Copy</Button>
+        <Text textAlign="center" fontSize="500">{props.wordPair }</Text>
+        <Button variant="ghost" onClick={() => copyToClipboard(props.wordPair)}>Copy</Button>
       </Level>
     </Card>
   );
